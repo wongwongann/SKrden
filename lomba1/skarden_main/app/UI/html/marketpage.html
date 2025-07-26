@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skarden | Shop</title>
+    <link rel="stylesheet" href="/skarden_main/app/UI/css/market.css">
+    <link rel="stylesheet" href="/skarden_main/app/UI/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="page-fade"></div>
+    <div class="productslist-container">
+        <div class="mainlogo">
+            <img src="/skarden_main/app/UI/icon/png/prim1.1nbg.png" style="width: 60%;">
+
+        </div>
+
+        <button class="toggle-sorting-section" id="toggle-sorting-section-btn">
+            <span class="toggle-arrow-bg"><span class="toggle-arrow">&lt;</span></span>
+        </button>
+
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="SKrev1.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#" class="active"><i class="fas fa-store"></i> Shop</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sorting">
+            <button class="toggle-sorting-btn" aria-expanded="false" aria-controls="sorting-menu">
+                <span class="toggle-icon">▼</span> Sort Options
+            </button>
+            <div class="collapsible-sorting" id="sorting-menu">
+                <label for="sort-price" class="sr-only">Sort by Price</label>
+                <select id="sort-price">
+                    <option value="default">Price: Default</option>
+                    <option value="low-to-high">Price: Low to High</option>
+                    <option value="high-to-low">Price: High to Low</option>
+                </select>
+                <label for="sort-name" class="sr-only">Sort by Name</label>
+                <select id="sort-name">
+                    <option value="default">Name: Default</option>
+                    <option value="a-to-z">Name: A to Z</option>
+                    <option value="z-to-a">Name: Z to A</option>
+                </select>
+                <label for="sort-date" class="sr-only">Sort by Date</label>
+                <select id="sort-date">
+                    <option value="default">Date: Default</option>
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                </select>
+            </div>
+        </div>
+        <div class="products-scroll">
+            <div class="product-card">
+                <img src="https://static.vecteezy.com/system/resources/previews/029/721/159/non_2x/broccoli-transparent-background-png.png"
+                    alt="Product 1">
+                <div class="product-info">
+                    <h3>Broccoli</h3>
+                    <p data-price="19.99">$19.99</p>
+                </div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://wallpapers.com/images/featured/carrot-png-7crm54jnhoaaa46f.jpg" alt="Product 2">
+                <div class="product-info">
+                   <h3>Carrot</h3>
+                    <p data-price="24.99">$24.99</p>
+                </div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://pngimg.com/d/spinach_PNG33.png" alt="Product 3">
+                <div class="product-info">
+                     <h3>Spinach</h3>
+                    <p data-price="15.99">$15.99</p>
+                </div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://dtgxwmigmg3gc.cloudfront.net/imagery/assets/derivations/icon/512/512/true/eyJpZCI6IjQ5MWFhZDBmZjFmNjI2MmM3NjRlNTA1NWVkZWYyNTRmLmpwZyIsInN0b3JhZ2UiOiJwdWJsaWNfc3RvcmUifQ?signature=64ccfa2c9d19ea8ef3f38992c7ca4869d3058c8227947079ff7af3007907ca35"
+                    alt="Product 4">
+                <div class="product-info">
+                     <h3>Kale</h3>
+                    <p data-price="29.99">$29.99</p>
+                </div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://static.vecteezy.com/system/resources/previews/011/190/604/non_2x/green-zucchini-isolated-png.png"
+                    alt="Product 5">
+                <div class="product-info">
+                   <h3>Zucchini</h3>
+                    <p data-price="22.99">$22.99</p>
+                </div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://png.pngtree.com/png-clipart/20210530/original/pngtree-sweet-pepper-red-food-png-image_6343595.jpg"
+                    alt="Product 6">
+                <div class="product-info">
+                    <h3>Sweet Pepper</h3>
+                    <p data-price="18.99">$18.99</p>
+                </div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/029/720/262/small_2x/cauliflower-transparent-background-png.png"
+                    alt="Product 7">
+                <div class="product-info">
+                    <h3>Cauliflower</h3>
+                    <p data-price="27.99">$27.99</p>
+                </div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://thumbs.dreamstime.com/b/tomatoes-half-tomato-isolated-white-png-file-transparent-background-tomatoes-half-tomato-isolated-white-136961939.jpg"
+                    alt="Product 8">
+                <div class="product-info">
+                    <h3>Tomato</h3>
+                    <p data-price="21.99">$21.99</p>
+                </div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://purepng.com/public/uploads/large/purepng.com-cucumbercucumbervegetablespicklegreenfoodhealthycucumbers-481522161925n6wbx.png"
+                    alt="Product 1">
+                <div class="product-info">
+                   <h3>Cucumber</h3>
+                    <p data-price="19.99">$19.99</p>
+                </div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://www.pngplay.com/wp-content/uploads/10/Brinjal-Download-Free-PNG.png" alt="Product 2">
+                <div class="product-info">
+                    <h3>Eggplant</h3>
+                    <p data-price="24.99">$24.99</p>
+                </div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://static.vecteezy.com/system/resources/previews/022/149/260/non_2x/green-lettuce-isolated-png.png"
+                    alt="Product 3">
+                <div class="product-info">
+                    <h3>Lettuce</h3>
+                    <p data-price="15.99">$15.99</p>
+                </div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://www.pngmart.com/files/1/Red-Onion-PNG-Transparent-Image.png" alt="Product 4">
+                <div class="product-info">
+                   <h3>Onion</h3>
+                    <p data-price="29.99">$29.99</p>
+                </div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://pngimg.com/d/garlic_PNG12765.png" alt="Product 5">
+                <div class="product-info">
+                    <h3>Garlic</h3>
+                    <p data-price="22.99">$22.99</p>
+                </div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://www.freeiconspng.com/uploads/potato-png-0.png" alt="Product 6">
+                <div class="product-info">
+                    <h3>Potato</h3>
+                    <p data-price="18.99">$18.99</p>
+                </div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://www.pngarts.com/files/5/Green-Beans-PNG-Free-Download.png" alt="Product 7">
+                <div class="product-info">
+                    <h3>Green Beans</h3>
+                    <p data-price="27.99">$27.99</p>
+                </div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://static.vecteezy.com/system/resources/previews/029/711/105/non_2x/sweet-potato-transparent-background-png.png"
+                    alt="Product 8">
+                <div class="product-info">
+                    <h3>Sweet Potato</h3>
+                    <p data-price="21.99">$21.99</p>
+                </div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                            data-cfemail="6b181e1b1b04191f2b0c0a190f0e05090702181845080406">[email&#160;protected]</a>
+                    </li>
+                    <li>Phone: (123) 456-7890</li>
+                    <li>Address: 123 Green Lane, Nature City, NC 12345</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Garden Bliss. All rights reserved.
+        </div>
+    </footer>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/skarden_main/app/UI/js/nav.js"></script>
+    <script src="/skarden_main/app/UI/js/fade.js"></script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'96404c677b2ae785',t:'MTc1MzMyNzQwMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
